@@ -50,4 +50,4 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: wantser/dotnettemplate:latest
+        tags: wantser/dotnettemplate:latest,wantser/dotnettemplate:${{ env.SOURCE_COMMIT }}
