@@ -35,3 +35,6 @@ jobs:
     - name: Typescript test
       run: npm run test
       working-directory: ./DotnetTemplate.Web
+
+    - name: Build and push Docker images
+      uses: docker/build-push-action@v2.3.0
